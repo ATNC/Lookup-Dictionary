@@ -1,17 +1,13 @@
-import sys
 import pymouse
-sys.path.insert(0, './KeyHandlers')
-from KeyListener import KeyListener
-from HandleClass import Handler
+from .keyhandlers.KeyListener import KeyListener
+from .keyhandlers.HandleClass import Handler
+from .ui.lookupBox2 import Ui_Form
+
 import pyperclip
 import pyautogui
 from pynput.keyboard import Key, Controller
-sys.path.insert(0, './Ui')
-from lookupBox2 import Ui_Form
 from PyQt4 import QtGui
 from PyQt4 import QtCore
-
-
 
 error=False
 class DictionBox(QtGui.QWidget, Ui_Form):

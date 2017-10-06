@@ -1,0 +1,2 @@
+include README.md
+recursive-include loockup_dictionary images keyhandlers partial ui *gif *yml *py
